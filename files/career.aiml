@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml version="2.0">
 
-<!-- Greeting -->
+#initial greeting
 <category>
     <pattern>HI</pattern>
     <template>
@@ -24,7 +24,7 @@
     </template>
 </category>
 
-<!-- BUILD PATH - Question 2 -->
+#second question
 <category>
     <pattern>BUILD</pattern>
     <template>
@@ -34,7 +34,7 @@
     </template>
 </category>
 
-<!-- BUILD PATH - Question 3 -->
+#third question
 <category>
     <pattern>BUILDCODE</pattern>
     <template>
@@ -44,7 +44,7 @@
     </template>
 </category>
 
-<!-- ANALYZE PATH - Question 2 -->
+#fourth question
 <category>
     <pattern>ANALYZE</pattern>
     <template>
@@ -54,7 +54,7 @@
     </template>
 </category>
 
-<!-- CAREER RESULTS -->
+#final results
 <category>
     <pattern>DBA</pattern>
     <template>
