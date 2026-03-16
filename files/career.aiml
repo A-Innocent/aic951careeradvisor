@@ -1,4 +1,98 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml version="2.0">
-	<!-- insert your AIML categories here -->
+
+<!-- Greeting -->
+<category>
+    <pattern>HI</pattern>
+    <template>
+        Welcome! I'm your WGU CS Career Advisor. I'll help you discover which data career fits you best. Ready to find your path?
+        <button><text>Let's get started</text><postback>START</postback></button>
+    </template>
+</category>
+
+<category>
+    <pattern>HELLO</pattern>
+    <template><srai>HI</srai></template>
+</category>
+
+<category>
+    <pattern>START</pattern>
+    <template>
+        First question: Are you more interested in building and maintaining data systems, or analyzing and presenting data to stakeholders?
+        <button><text>Building/Maintaining Systems</text><postback>BUILD</postback></button>
+        <button><text>Analyzing/Presenting Data</text><postback>ANALYZE</postback></button>
+    </template>
+</category>
+
+<!-- BUILD PATH - Question 2 -->
+<category>
+    <pattern>BUILD</pattern>
+    <template>
+        Do you prefer writing code and building things, or ensuring systems run smoothly and securely?
+        <button><text>Writing Code/Building</text><postback>BUILDCODE</postback></button>
+        <button><text>Systems Running Smoothly</text><postback>DBA</postback></button>
+    </template>
+</category>
+
+<!-- BUILD PATH - Question 3 -->
+<category>
+    <pattern>BUILDCODE</pattern>
+    <template>
+        Do you prefer optimizing queries and database performance, or building data pipelines and infrastructure?
+        <button><text>Queries/Performance</text><postback>SQLDEV</postback></button>
+        <button><text>Pipelines/Infrastructure</text><postback>DATAENG</postback></button>
+    </template>
+</category>
+
+<!-- ANALYZE PATH - Question 2 -->
+<category>
+    <pattern>ANALYZE</pattern>
+    <template>
+        Do you prefer exploring data to find insights, or building interactive dashboards and reports?
+        <button><text>Exploring Data/Insights</text><postback>DATAANALYST</postback></button>
+        <button><text>Dashboards/Reports</text><postback>BIDEV</postback></button>
+    </template>
+</category>
+
+<!-- CAREER RESULTS -->
+<category>
+    <pattern>DBA</pattern>
+    <template>
+        Based on your interests, you should consider becoming a Database Administrator! DBAs maintain database systems, ensure security, manage backups, and optimize performance. They are essential for keeping an organization's data safe and accessible.
+        <button><text>Learn More</text><url>https://www.coursera.org/articles/database-administrator</url></button>
+    </template>
+</category>
+
+<category>
+    <pattern>SQLDEV</pattern>
+    <template>
+        Based on your interests, you should consider becoming a SQL Developer! SQL Developers write complex queries, design database structures, and optimize database performance. They bridge the gap between data and applications.
+        <button><text>Learn More</text><url>https://www.coursera.org/articles/sql-developer</url></button>
+    </template>
+</category>
+
+<category>
+    <pattern>DATAENG</pattern>
+    <template>
+        Based on your interests, you should consider becoming a Data Engineer! Data Engineers build and maintain data pipelines, design ETL processes, and create the infrastructure that makes data accessible for analysis.
+        <button><text>Learn More</text><url>https://www.coursera.org/articles/what-does-a-data-engineer-do-and-how-do-i-become-one</url></button>
+    </template>
+</category>
+
+<category>
+    <pattern>DATAANALYST</pattern>
+    <template>
+        Based on your interests, you should consider becoming a Data Analyst! Data Analysts explore datasets, identify trends, and provide actionable insights that drive business decisions.
+        <button><text>Learn More</text><url>https://www.coursera.org/articles/what-does-a-data-analyst-do-a-career-guide</url></button>
+    </template>
+</category>
+
+<category>
+    <pattern>BIDEV</pattern>
+    <template>
+        Based on your interests, you should consider becoming a BI Developer! BI Developers create interactive dashboards, build reporting solutions, and transform raw data into visual insights using tools like Power BI and Tableau.
+        <button><text>Learn More</text><url>https://www.coursera.org/articles/bi-developer</url></button>
+    </template>
+</category>
+
 </aiml>
